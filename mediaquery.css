@@ -1,0 +1,29 @@
+@media (max-width: 500px) {
+    .navbar img {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar ul {
+        position: absolute;
+        left: -350px;
+        top: 100%;
+        width: 50%;
+        flex-direction: column;
+        background-color: #011616;
+        padding: 50px;
+        border-radius: 0 0 10px 0;
+        transition: all .4s ease-in-out;
+        z-index: 999;
+    }
+    .navbar ul.show {
+        position: absolute;
+        left: 0;
+    }
+    .navbar ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
